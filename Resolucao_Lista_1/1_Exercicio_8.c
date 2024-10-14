@@ -10,29 +10,25 @@ Fn−1+Fn−2, caso contrário.
 # include <stdio.h>
 
 
-int main(){
+int main()
+{
     int n_menos_2, n_menos_1, auxiliar,itera;
     n_menos_2 = 0;
     n_menos_1 = 1;
     auxiliar = 0;
-    itera =10;
-    
-    while(itera ==0)
+
+    printf("Qual a quantidade de compilações desejada? \n");
+    scanf("%d",&itera);
+    int counter = 1;
+    while(itera !=0)
     {
+        printf("O resultado da compilação %d é %d\n", counter,n_menos_1);
+        auxiliar = n_menos_2;
+        n_menos_2 = n_menos_1;
+        n_menos_1 = n_menos_2 + auxiliar;
+        counter++;
         itera--;
-        if (n_menos_1==1)
-            {
-                printf("%d \n",n_menos_1);
-                n_menos_2 = n_menos_1;
-                n_menos_1 +=1;
-            }
-        else 
-            {
-                auxiliar = n_menos_2;
-                n_menos_2 = n_menos_1;
-                n_menos_1 = n_menos_2 + auxiliar; 
-                printf("%d \n",n_menos_1);
-            }
     }
+
     return 0;
 }
