@@ -67,7 +67,7 @@ int main()
 {   
     printf("Digite a quantidade de números que deseja analisar\n");
     int quantidadeNumeros;
-    scanf("%d",&quantidadeNumeros);
+    scanf("%d",&quantidadeNumeros); 
     int ve[quantidadeNumeros];
     le_vetor(ve,quantidadeNumeros);
     printf("O valor minimo é %d \n",minimo(ve,quantidadeNumeros));

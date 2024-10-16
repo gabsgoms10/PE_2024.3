@@ -35,7 +35,5 @@ int main()
 
     resultado = fatorialN/(fatorialK*fatorialNK);
     printf("O resultado é %d\n", resultado);
-
-
     return 0;
 }
